@@ -1,0 +1,15 @@
+{
+  "environment": "dev",
+  "baseUrl": "https://codemify-demo-app.vercel.app",
+  "demoAppPath": "/demo-app",
+  "credentials": {
+    "username": "standard_user",
+    "password": "my_secret_code"
+  },
+  "timeouts": {
+    "defaultTimeout": 30000,
+    "navigationTimeout": 30000,
+    "actionTimeout": 15000
+  },
+  "headless": true
+}
