@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": [],
+    "ask": [
+      "Edit(playwright.config.ts)",
+      "Write(playwright.config.ts)"
+    ]
+  }
+}
