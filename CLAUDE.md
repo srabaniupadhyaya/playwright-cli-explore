@@ -7,9 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 A Playwright E2E test suite for the "Codemify Store" demo app
 (`https://codemify-demo-app.vercel.app/demo-app`), built using the
 `@playwright/cli` (`playwright-cli`) tool for live browser exploration and
-locator verification. The `.claude/skills/playwright-cli/` skill (installed
-via `npx playwright-cli install --skills`) documents that tool's commands and
-workflows in detail — read it before writing or debugging tests.
+locator verification. See **Docs directories** below for where its skill
+docs and this repo's testing conventions live.
 
 ## Commands
 
@@ -79,6 +78,14 @@ steps and `expect:` outcomes. Every `.spec.ts` file's leading `// spec:` /
 its seed file — keep them in sync if a scenario's behavior changes.
 
 **Docs directories:**
+- `.claude/skills/playwright-cli/` — the `playwright-cli` tool's own skill docs
+  (installed via `npx playwright-cli install --skills`), covering its
+  commands and live-exploration workflows. Read before writing or debugging
+  tests with that tool.
+- `docs/playwright-best-practices.md` — this repo's testing conventions:
+  locator priority, the no-hard-waits rule, `waitForResponse` usage, and Page
+  Object conventions. Read before writing or reviewing any spec, page
+  object, or fixture.
 - `docs/superpowers/specs/` — design docs (produced by the `brainstorming` skill).
 - `docs/superpowers/plans/` — implementation plans (produced by the
   `writing-plans` skill), broken into bite-sized, checkbox-tracked tasks.
