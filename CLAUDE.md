@@ -90,6 +90,10 @@ its seed file — keep them in sync if a scenario's behavior changes.
 - `docs/superpowers/plans/` — implementation plans (produced by the
   `writing-plans` skill), broken into bite-sized, checkbox-tracked tasks.
 
+## Commits
+
+Never amend commits, force-push, or push to a remote without explicit instruction.
+
 ## Notable app behavior worth remembering when writing tests
 
 - The cart nav button's accessible name is `"Cart"` when empty and
