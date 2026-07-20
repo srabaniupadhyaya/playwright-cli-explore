@@ -21,7 +21,8 @@
       "Edit(./config/config.json)",
       "Write(./config/config.json)",
       "Bash(git push*)",
-      "Bash(git branch -D *)"
+      "Bash(git branch -D *)",
+      "Bash(git commit --amend*)"
     ]
   }
 }

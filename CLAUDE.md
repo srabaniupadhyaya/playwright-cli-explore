@@ -90,7 +90,21 @@ its seed file — keep them in sync if a scenario's behavior changes.
 - `docs/superpowers/plans/` — implementation plans (produced by the
   `writing-plans` skill), broken into bite-sized, checkbox-tracked tasks.
 
+## Development workflow
+
+When running `superpowers:executing-plans`, always dispatch
+`superpowers:requesting-code-review` after each task completes, before
+starting the next task. Fix Critical and Important issues before
+proceeding.
+
 ## Commits
+
+Run `npx tsc --noEmit` before every commit — it must pass with no errors.
+(There is no lint/`flint` script in this repo yet; this is the only
+pre-commit check currently enforceable.)
+
+Use a semantic label prefix on every commit subject: `fix`, `feat`, `chore`,
+`docs`, `test`, or `devops` (e.g. `fix: dedupe auth storage-state path`).
 
 Never amend commits, force-push, or push to a remote without explicit instruction.
 
